@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Serif", serif;
+}
+
+  
+body{
+    height: 100%;
+    
+    padding-bottom: 150px; /* Ajuste o valor conforme necessário */
+}
+
+main {
+    margin-top: 200px; /* Ajuste conforme a altura do cabeçalho e da logo */
+}
+
+html {
+    scroll-padding-top: 200px; /* Ajuste conforme a altura do cabeçalho */
+}
+
+
+.logo-img {
+    height: auto; /* Mantém a proporção */
+    display: block; /* Garante que as margens funcionem corretamente */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 220px; /* Ajuste conforme necessário */
+    background-color: #F5F2EB; /* Mantém a aparência */
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0px; /* Ajuste para não colidir com a logo */
+    left: 0;
+    width: 100%;
+    background-color: rgb(247, 247, 230); /* Mantém a aparência */
+    z-index: 1000; /* Garante que fique acima do conteúdo */
+    padding: 8px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Pequeno sombreamento para destaque */
+}
+
+
+header a{
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: .4s;
+}
+
+header a:hover{
+    color: rgb(171, 122, 81);
+    transform: scale(1.1);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{   
+    display: inline-block;
+    padding: 0 40px;
+}
+
+img{
+    height: 450px;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.txt-sobre-mim{
+    margin-left: 200px; /* Espaço à direita */
+    margin-right: 200px; /* Espaço à direita */
+    text-align: justify;
+    color: white;
+}
+section p{
+    font-size: 20px;
+}
+
+.btn-contato{
+    padding: 16px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.25;
+    background: rgb(171, 122, 81);
+    text-decoration: none;
+    user-select: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    position: relative;
+    transition: background-color .6s ease;
+    overflow: hidden;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 50%;
+      left: 50%;
+      top: var(--mouse-y);
+      left: var(--mouse-x);
+      transform-style: flat;
+      transform: translate3d(-50%,-50%,0);
+      background: rgba(white,.1);
+      border-radius: 100%;
+      transition: width .3s ease, height .3s ease;
+    }
+    &:focus,
+    &:hover {
+        background: darken(#FC6E51,7%);
+    }
+    &:active {
+      &:after {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+
+.btn-contato:hover{
+    color: #000;
+    background-color:blanchedalmond;
+}
+
+.contato a {
+    font-size: 20px; /* Tamanho da fonte */
+    color: #000000; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease-in-out; /* Suaviza a mudança de cor */
+}
+
+.contato a:hover {
+    color: rgb(171, 122, 81);
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+.separator {
+    width: 80%;
+    height: 3px;
+    background-color: rgb(171, 122, 81); /* Cor personalizada */
+    margin: 50px auto; /* Centraliza e adiciona espaçamento */
+    border-radius: 5px; /* Borda arredondada para um visual mais suave */
+}
+
+.bg-sobre {
+  background-color: #8B3A3A; /* cor suave */
+}
+
+.bg-psicanalise {
+  background-color: #f7f0ea; /* cor diferente para contraste */
+}
+
+.bg-faq {
+  background-color: #f9f9f9; /* neutro claro */
+}
+
+.bg-contato {
+  background-color: #f0ece3; /* outro tom suave */
+}
+
+
+@media screen and (max-width: 767px) { /*Celulares*/
+    .flex{
+        flex-direction: column;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+     
+    section{
+        margin-left: 1px; /* Espaço à direita */
+        margin-right: 50px; /* Espaço à direita */
+        text-align: justify;
+    }
+
+    .logo-img {
+        width: 80%; /* opcional: redimensiona para telas menores */
+        max-width: 100%;
+        margin-right: 52px; /* Espaço à direita */
+    }
+
+    .imagem-duda img {
+        width: 100%; /* opcional: redimensiona para telas menores */
+        max-width: 100%;
+    }
+
+    .btn-contato{
+        display: block;
+        margin: 0 auto;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    .separator {
+        width: 90%;
+    }
+
+    section .contatos{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header {
+        top: -6px; /* Ajuste para não colidir com a logo */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { /*Tablets*/
+    .flex{
+        flex-direction: column;
+    }
+
+    header {
+        top: -6px; /* Ajuste para não colidir com a logo */
+    }
+
+
+    .logo-img {
+        max-width: 45%;
+    }
+    
+    header a{
+        font-size: 22px;
+    }
+
+    section{
+        margin-left: 80px; /* Espaço à direita */
+        margin-right: 100px; /* Espaço à direita */
+        text-align: justify;
+    }
+    
+    section#sobre-mim{
+        margin-left: 30px; /* Espaço à direita */
+        margin-right: 50px; /* Espaço à direita */
+        text-align: justify;
+        padding: 60px;
+    }
+
+    section#psicanalise{
+        padding: 40px;
+    }
+
+    img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .btn-contato{
+        display: block;
+        margin: 0 auto;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    section .contatos{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section p{
+        font-size: 25px;
+    }
+
+    .contato a {
+        font-size: 25px; /* Tamanho da fonte */
+    }
+  }
