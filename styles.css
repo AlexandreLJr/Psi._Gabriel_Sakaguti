@@ -8,7 +8,7 @@
   
 body{
     height: 100%;
-    
+    background-color: #F5F2EB;
     padding-bottom: 150px; /* Ajuste o valor conforme necessário */
 }
 
@@ -35,7 +35,7 @@ header {
     top: 0px; /* Ajuste para não colidir com a logo */
     left: 0;
     width: 100%;
-    background-color: rgb(247, 247, 230); /* Mantém a aparência */
+    background-color: #F5F2EB;
     z-index: 1000; /* Garante que fique acima do conteúdo */
     padding: 8px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Pequeno sombreamento para destaque */
@@ -43,7 +43,7 @@ header {
 
 
 header a{
-    color: #000;
+    color: #8B3A3A;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
@@ -51,7 +51,7 @@ header a{
 }
 
 header a:hover{
-    color: rgb(171, 122, 81);
+    color: #5f1010;
     transform: scale(1.1);
 }
 
@@ -64,37 +64,54 @@ header nav ul li{
     padding: 0 40px;
 }
 
+.txt-infos{
+    color: #8B3A3A;
+    font-size: 60px;
+}
+
+.txt-inicio{
+    font-size: 20px;
+    color: #8B3A3A;
+}
+
+.frase{
+    font-size: 25px;
+    color: #8B3A3A;
+}
+
 img{
     height: 450px;
     width: 320px;
     border-radius: 10px;
+    margin-right: 100px;
 }
 
 .txt-sobre-mim{
-    margin-left: 200px; /* Espaço à direita */
-    margin-right: 200px; /* Espaço à direita */
+    margin-left: 100px; /* Espaço à direita */
+    margin-right: 10px; /* Espaço à direita */
     text-align: justify;
     color: white;
-}
-section p{
+    padding-bottom: 30px;
+    padding-top: 30px;
     font-size: 20px;
 }
 
-.btn-contato{
-    padding: 16px 30px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
-    line-height: 1.25;
-    background: rgb(171, 122, 81);
-    text-decoration: none;
-    user-select: none;
-    color: white;
-    font-size: 16px;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    position: relative;
-    transition: background-color .6s ease;
-    overflow: hidden;
+.btn-contato-vinho{
+    padding: 18px 70px;          /* Ajuste o tamanho aqui */
+  border: none;                /* Remove a borda */
+  border-radius: 8px;
+  background: #8B3A3A;
+  color: white;
+  font-size: 16px;             /* Ajuste o tamanho da fonte aqui */
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.25;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  transition: background-color .6s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     &:after {
       content: "";
       position: absolute;
@@ -112,7 +129,55 @@ section p{
     }
     &:focus,
     &:hover {
-        background: darken(#FC6E51,7%);
+        background: #5f1010;
+    }
+    &:active {
+      &:after {
+        width: 300px;
+        height: 600px;
+      }
+    }
+  }
+
+
+.btn-contato-vinho:hover{
+    color: #ffffff;
+    background-color:#701010;
+}
+
+.btn-contato-branco{
+    padding: 18px 70px;          /* Ajuste o tamanho aqui */
+  border: none;                /* Remove a borda */
+  border-radius: 8px;
+  background: #F5F2EB;
+  color: #8B3A3A;
+  font-size: 16px;             /* Ajuste o tamanho da fonte aqui */
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.25;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  transition: background-color .6s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 50%;
+      left: 50%;
+      
+      transform-style: flat;
+      transform: translate3d(-50%,-50%,0);
+      background: rgba(white,.1);
+      border-radius: 100%;
+      transition: width .3s ease, height .3s ease;
+    }
+    &:focus,
+    &:hover {
+        background: #b0aeaa;;
     }
     &:active {
       &:after {
@@ -122,9 +187,27 @@ section p{
     }
   }
 
-.btn-contato:hover{
-    color: #000;
-    background-color:blanchedalmond;
+.btn-contato-branco:hover{
+    color: #8B3A3A;
+    background-color:#ffdede;
+}
+
+
+.txt-abordagem{
+    font-size: 20px;
+    color: #8B3A3A;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.txt-paraquem{
+    margin-left: 100px; /* Espaço à direita */
+    margin-right: 100px; /* Espaço à direita */
+    text-align: justify;
+    color: white;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    font-size: 20px;
 }
 
 .contato a {
@@ -140,20 +223,13 @@ section p{
 }
 
 
-.separator {
-    width: 80%;
-    height: 3px;
-    background-color: rgb(171, 122, 81); /* Cor personalizada */
-    margin: 50px auto; /* Centraliza e adiciona espaçamento */
-    border-radius: 5px; /* Borda arredondada para um visual mais suave */
-}
 
 .bg-sobre {
   background-color: #8B3A3A; /* cor suave */
 }
 
-.bg-psicanalise {
-  background-color: #f7f0ea; /* cor diferente para contraste */
+.bg-paraquem {
+  background-color: #8B3A3A;/* cor diferente para contraste */
 }
 
 .bg-faq {
@@ -186,7 +262,7 @@ section p{
         margin-right: 52px; /* Espaço à direita */
     }
 
-    .imagem-duda img {
+    .imagem-gabriel img {
         width: 100%; /* opcional: redimensiona para telas menores */
         max-width: 100%;
     }
