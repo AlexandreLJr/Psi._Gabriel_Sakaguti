@@ -7,9 +7,9 @@
 
   
 body{
-    height: 100%;
+   
     background-color: #F5F2EB;
-    padding-bottom: 150px; /* Ajuste o valor conforme necessário */
+
 }
 
 main {
@@ -210,15 +210,47 @@ img{
     font-size: 20px;
 }
 
+.txt-experiencia{
+    font-size: 20px;
+    color: #8B3A3A;
+    margin-left: 120px; /* Espaço à direita */
+    margin-right: 100px; /* Espaço à direita */
+}
+
+.frase2{
+    font-size: 22px;
+    margin-left: 100px; /* Espaço à direita */
+    margin-right: 200px; /* Espaço à direita */
+}
+
+.txt-servicos{
+    margin-left: 100px; /* Espaço à direita */
+    margin-right: 100px; /* Espaço à direita */
+    text-align: justify;
+    color: white;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.txt-contato{
+    text-align: justify;
+    color: white;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+
 .contato a {
     font-size: 20px; /* Tamanho da fonte */
-    color: #000000; /* Cor do link */
+    color: #ffffff; /* Cor do link */
     text-decoration: none; /* Remove o sublinhado */
     transition: color 0.3s ease-in-out; /* Suaviza a mudança de cor */
 }
 
 .contato a:hover {
-    color: rgb(171, 122, 81);
+    color: #F5F2EB;;
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
@@ -232,12 +264,12 @@ img{
   background-color: #8B3A3A;/* cor diferente para contraste */
 }
 
-.bg-faq {
-  background-color: #f9f9f9; /* neutro claro */
+.bg-servicos {
+  background-color: #8B3A3A;/* cor diferente para contraste */
 }
 
 .bg-contato {
-  background-color: #f0ece3; /* outro tom suave */
+  background-color: #8B3A3A; /* outro tom suave */
 }
 
 
@@ -276,10 +308,6 @@ img{
         text-decoration: none;
     }
     
-    .separator {
-        width: 90%;
-    }
-
     section .contatos{
         margin-left: auto;
         margin-right: auto;
