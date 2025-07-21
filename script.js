@@ -1,13 +1,36 @@
-/* Destaque de link ativo na navbar (ScrollSpy já ativado no body)   */
-/* Se quiser mais scripts, adicione aqui                            */
+function toggleFaq(element) {
+  if (window.innerWidth < 768) {
+    element.classList.toggle("active");
 
-/* Exemplo opcional: rolar suavemente quando o usuário clicar nos links */
-document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    // Fecha os outros (opcional)
+    document.querySelectorAll(".faq-box").forEach((box) => {
+      if (box !== element) {
+        box.classList.remove("active");
+      }
+    });
+  }
+}
+
+// Permite abrir com clique também no desktop
+document.addEventListener("DOMContentLoaded", function () {
+  const faqBoxes = document.querySelectorAll(".faq-box");
+
+  faqBoxes.forEach((box) => {
+    box.addEventListener("click", function () {
+      toggleFaq(this);
+    });
+
+    // Hover para desktop
+    box.addEventListener("mouseenter", function () {
+      if (window.innerWidth >= 768) {
+        this.classList.add("active");
+      }
+    });
+
+    box.addEventListener("mouseleave", function () {
+      if (window.innerWidth >= 768) {
+        this.classList.remove("active");
+      }
+    });
   });
 });

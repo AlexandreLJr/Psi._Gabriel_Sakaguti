@@ -220,7 +220,7 @@ img{
 .frase2{
     font-size: 22px;
     margin-left: 100px; /* Espaço à direita */
-    margin-right: 200px; /* Espaço à direita */
+    margin-right: 100px; /* Espaço à direita */
 }
 
 .txt-servicos{
@@ -232,6 +232,54 @@ img{
     padding-top: 40px;
     font-size: 20px;
 }
+
+.faq{
+    color: #8B3A3A;
+    margin-left: 100px; /* Espaço à direita */
+    margin-right: 100px;
+}
+
+.faq-box {
+  background-color: #8B3A3A;
+  color: #F5F2EB;
+  cursor: pointer;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  border: 20px solid #ddd;
+  border-radius: 20px;
+}
+
+/* Efeito suave no hover */
+.faq-box:hover {
+  background-color: #8B3A3A;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Resposta escondida inicialmente, mas com transição suave */
+.faq-resposta {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.7s ease, opacity 0.2s ease;
+}
+
+/* Quando ativa */
+.faq-box.active .faq-resposta {
+  max-height: 500px; /* valor alto o suficiente para mostrar o conteúdo */
+  opacity: 1;
+}
+
+/* Setinha com rotação suave */
+.arrow {
+  font-size: 1.25rem;
+  transition: transform 0.7s ease;
+}
+
+/* Rotaciona a seta */
+.faq-box.active .arrow {
+  transform: rotate(180deg);
+}
+
+
 
 .txt-contato{
     text-align: justify;
