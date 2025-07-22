@@ -302,8 +302,6 @@ img{
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-
-
 .bg-sobre {
   background-color: #8B3A3A; /* cor suave */
 }
@@ -322,6 +320,7 @@ img{
 
 
 @media screen and (max-width: 767px) { /*Celulares*/
+
     .flex{
         flex-direction: column;
     }
