@@ -7,8 +7,8 @@
 
   
 body{
-   
     background-color: #F5F2EB;
+    overflow-x: hidden;
 
 }
 
@@ -28,6 +28,7 @@ html {
     max-width: 220px; /* Ajuste conforme necessário */
     background-color: #F5F2EB; /* Mantém a aparência */
     width: 100%;
+   
 }
 
 header {
@@ -63,6 +64,118 @@ header nav ul li{
     display: inline-block;
     padding: 0 40px;
 }
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+/* Ícone do menu */
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+}
+
+/* Menu mobile */
+.menu-mobile {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background: #F5F2EB;
+  z-index: 1000;
+  padding: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-mobile ul li {
+  margin-bottom: 1rem;
+}
+
+.menu-mobile ul li a {
+  color: #8B3A3A;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Mostrar menu quando o checkbox estiver marcado */
+#menu-toggle:checked ~ .menu-mobile {
+  display: block;
+}
+
+
+/* Ícone do menu */
+.menu-icon {
+  font-size: 40px;
+  cursor: pointer;
+  color: #8B3A3A;
+  position: relative;
+  top: -100px;
+}
+
+
+/* Estilização básica do menu */
+.menu ul,
+.menu-mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li,
+.menu-mobile ul li {
+  margin: 10px 0;
+}
+
+.menu ul li a,
+.menu-mobile ul li a {
+  text-decoration: none;
+  color: #8B3A3A;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover,
+.menu-mobile ul li a:hover {
+  color: #8B3A3A;
+}
+
+/* Para telas maiores que 768px */
+@media screen and (min-width: 768px) {
+  .menu {
+    display: block !important;
+  }
+
+  .menu ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-icon {
+  margin-top: -10px; /* ajuste fino */
+}
+
+  .menu-mobile {
+    display: none !important;
+  }
+}
+
+
 
 .txt-infos{
     color: #8B3A3A;
@@ -80,10 +193,11 @@ header nav ul li{
 }
 
 img{
-    height: 450px;
-    width: 320px;
+    height: 500px;
+    width: 350px;
     border-radius: 10px;
     margin-right: 100px;
+    margin-bottom: 25px;
 }
 
 .txt-sobre-mim{
@@ -279,8 +393,6 @@ img{
   transform: rotate(180deg);
 }
 
-
-
 .txt-contato{
     text-align: justify;
     color: white;
@@ -335,16 +447,25 @@ img{
         text-align: justify;
     }
 
+    header {
+    top: -10px; /* Ajuste para não colidir com a logo */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
     .logo-img {
         width: 80%; /* opcional: redimensiona para telas menores */
         max-width: 100%;
         margin-right: 52px; /* Espaço à direita */
+        margin-top: 7px;
+        width : 250px
     }
 
     .imagem-gabriel img {
         width: 100%; /* opcional: redimensiona para telas menores */
         max-width: 100%;
     }
+
 
     .btn-contato{
         display: block;
@@ -355,14 +476,104 @@ img{
         text-decoration: none;
     }
     
-    section .contatos{
-        margin-left: auto;
-        margin-right: auto;
+  
+
+    .txt-infos{
+      font-size: 50px;
+      margin-left: 50px;
+     
     }
 
-    header {
-        top: -6px; /* Ajuste para não colidir com a logo */
+    .txt-inicio{
+      margin-top: 20px;
+      margin-left: 45px;
+      margin-right: -20px;
     }
+
+    .frase{
+      margin-left: 45px;
+      margin-right: -20px;
+    }
+
+
+    .txt-sobre-mim{
+      margin-top: -50px;
+      margin-left: 2px;
+      margin-right: 40px;
+    }
+
+    .txt-abordagem{
+      margin-left: 2px;
+      margin-right: 5px;
+}
+
+ .txt-paraquem{
+       margin-left: 2px;
+      margin-right: 55px;
+}
+
+.txt-experiencia{
+       margin-left: 42px;
+    
+}
+
+.frase2{
+       margin-left: 2px;
+      margin-right: 15px;
+}
+
+.txt-servicos{
+       margin-left: 2px;
+       margin-right: 100px;
+    
+}
+
+.txt-contato{
+     margin-right: 40px;
+     font-size: 2px; 
+}
+
+.titulofaq{
+  margin-left: -80px;
+  margin-right: 100px;
+}
+
+.arrow {
+  opacity: 0.0;          /* Opcional: aparência de desabilitado */
+}
+
+.faq-box{
+  margin-right: 100px;
+  margin-left: -100px;
+}
+
+.faq-box:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .faq-box:hover .arrow {
+    transform: rotate(180deg);
+  }
+
+  .faq-box:hover .faq-resposta {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+    .bg-sobre{
+        width: 100%;
+        padding: 60px 0; /* Espaçamento vertical */
+    }
+    .bg-servicos{
+        width: 100%;
+    }
+    .bg-paraquem{
+        width: 100%;
+    }
+    .bg-contato{
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) { /*Tablets*/
@@ -427,5 +638,18 @@ img{
 
     .contato a {
         font-size: 25px; /* Tamanho da fonte */
+    }
+
+    .bg-sobre{
+        width: 100%;
+    }
+    .bg-servicos{
+        width: 100%;
+    }
+    .bg-paraquem{
+        width: 100%;
+    }
+    .bg-contato{
+        width: 100%;
     }
   }

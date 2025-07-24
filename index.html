@@ -15,33 +15,50 @@
 </head>
 <body>
     
-    <header>
-        <div class="text-center mt-1 ps-5">
-            <a href="#inicio">
-                <img src="assets/Logo.jpg" alt="logo inicial" class="img-fluid logo-img" style="cursor: pointer;">
-            </a>
-        </div>
-        <div class="interface mt-4">
-            <nav class="menu-desktop justify-content-center align-items-center text-center">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobre-mim">Sobre mim</a></li>
-                    <li><a href="#abordagem">Abordagem</a></li>
-                    <li><a href="#paraquem">Para quem</a></li>
-                    <li><a href="#experiencia">Serviços</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+  <!-- Logo -->
+  <div class="text-center mt-1 ps-5">
+    <a href="#inicio">
+      <img src="assets/Logo.jpg" alt="logo inicial" class="img-fluid logo-img" style="cursor: pointer;">
+    </a>
+  </div>
 
-    <!-- Botão Mobile -->
-<div class="d-md-none d-flex justify-content-end p-3">
-  <button class="btn btn-outline-dark" id="btnMenuMobile">
-    <i class="bi bi-list" style="font-size: 1.5rem;"></i>
-  </button>
-</div>
+  <!-- Menu Desktop -->
+  <div class="interface mt-4 d-none d-md-block">
+    <nav class="menu-desktop justify-content-center align-items-center text-center">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre-mim">Sobre mim</a></li>
+        <li><a href="#abordagem">Abordagem</a></li>
+        <li><a href="#paraquem">Para quem</a></li>
+        <li><a href="#experiencia">Serviços</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Menu Mobile Toggle -->
+  <div class="d-block d-md-none position-relative px-3">
+    <input type="checkbox" id="menu-toggle" class="d-none" />
+    <label for="menu-toggle" class="menu-icon">
+      &#9776; <!-- Ícone de "hamburguer" -->
+    </label>
+
+    <!-- Menu Mobile -->
+    <nav class="menu-mobile">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre-mim">Sobre mim</a></li>
+        <li><a href="#abordagem">Abordagem</a></li>
+        <li><a href="#paraquem">Para quem</a></li>
+        <li><a href="#experiencia">Serviços</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
     <main>
 <section id="inicio" class="topo-do-site mt-5">
@@ -110,7 +127,7 @@
                         </p>
                     </div>
                     <div class="imagem-gabriel ps-5 mt-5">
-                        <img src="assets/fotoGabriel.jpg" alt="foto-gabriel">
+                        <img src="assets/fotoGabrielHD.jpg" alt="foto-gabriel">
                     </div>
                 </div>
             </div>
@@ -234,7 +251,7 @@
         </section>
 
         <section id="faq" class="faq container my-5">
-            <h1 class="fw-bold">Perguntas Frequentes</h1>
+            <h1 class="fw-bold titulofaq">Perguntas Frequentes</h1>
             <div class="row g-4 mt-3">
                 <!-- Coluna 1 -->
                 <div class="col-md-6">
