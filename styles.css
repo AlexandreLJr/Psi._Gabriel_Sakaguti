@@ -9,7 +9,6 @@
 body{
     background-color: #F5F2EB;
     overflow-x: hidden;
-
 }
 
 main {
@@ -18,6 +17,8 @@ main {
 
 html {
     scroll-padding-top: 200px; /* Ajuste conforme a altura do cabeçalho */
+    overflow-x: hidden;
+   
 }
 
 
@@ -193,9 +194,9 @@ header nav ul li{
 }
 
 img{
-    height: 500px;
-    width: 350px;
-    border-radius: 10px;
+  height: 500px;
+  width: 350px;
+  border-radius: 10px;
     margin-right: 100px;
     margin-bottom: 25px;
 }
@@ -211,7 +212,7 @@ img{
 }
 
 .btn-contato-vinho{
-    padding: 18px 70px;          /* Ajuste o tamanho aqui */
+  padding: 18px 70px;          /* Ajuste o tamanho aqui */
   border: none;                /* Remove a borda */
   border-radius: 8px;
   background: #8B3A3A;
@@ -253,14 +254,13 @@ img{
     }
   }
 
-
 .btn-contato-vinho:hover{
     color: #ffffff;
     background-color:#701010;
 }
 
 .btn-contato-branco{
-    padding: 18px 70px;          /* Ajuste o tamanho aqui */
+  padding: 18px 70px;          /* Ajuste o tamanho aqui */
   border: none;                /* Remove a borda */
   border-radius: 8px;
   background: #F5F2EB;
@@ -305,7 +305,6 @@ img{
     color: #8B3A3A;
     background-color:#ffdede;
 }
-
 
 .txt-abordagem{
     font-size: 20px;
@@ -401,7 +400,6 @@ img{
     font-size: 20px;
 }
 
-
 .contato a {
     font-size: 20px; /* Tamanho da fonte */
     color: #ffffff; /* Cor do link */
@@ -430,9 +428,13 @@ img{
   background-color: #8B3A3A; /* outro tom suave */
 }
 
+section {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 
 @media screen and (max-width: 767px) { /*Celulares*/
-
     .flex{
         flex-direction: column;
     }
@@ -441,11 +443,6 @@ img{
         display: none;
     }
      
-    section{
-        margin-left: 1px; /* Espaço à direita */
-        margin-right: 50px; /* Espaço à direita */
-        text-align: justify;
-    }
 
     header {
     top: -10px; /* Ajuste para não colidir com a logo */
@@ -462,8 +459,8 @@ img{
     }
 
     .imagem-gabriel img {
-        width: 100%; /* opcional: redimensiona para telas menores */
-        max-width: 100%;
+        margin-left: -5px;
+        margin-top: -50px;
     }
 
 
@@ -476,23 +473,22 @@ img{
         text-decoration: none;
     }
     
-  
 
     .txt-infos{
-      font-size: 50px;
+      font-size: 70px;
       margin-left: 50px;
-     
+      margin-right: 40px;
     }
 
     .txt-inicio{
       margin-top: 20px;
       margin-left: 45px;
-      margin-right: -20px;
+      margin-right: 20px;
     }
 
     .frase{
-      margin-left: 45px;
-      margin-right: -20px;
+      margin-left: 40px;
+      margin-right: 40px;
     }
 
 
@@ -504,27 +500,34 @@ img{
 
     .txt-abordagem{
       margin-left: 2px;
-      margin-right: 5px;
+      margin-right: 50px;
 }
 
  .txt-paraquem{
        margin-left: 2px;
       margin-right: 55px;
+      
+}
+
+.tituloexp{
+       margin-left: 50px;
+       margin-right: 70px;
+       margin-top: -40px;
 }
 
 .txt-experiencia{
-       margin-left: 42px;
-    
+       margin-left: -10px;
+       margin-right: 50px;
 }
 
 .frase2{
-       margin-left: 2px;
-      margin-right: 15px;
+       margin-left: 30px;
+      margin-right: 20px;
 }
 
 .txt-servicos{
        margin-left: 2px;
-       margin-right: 100px;
+       margin-right: 50px;
     
 }
 
@@ -533,26 +536,22 @@ img{
      font-size: 2px; 
 }
 
+.faq{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .titulofaq{
-  margin-left: -80px;
-  margin-right: 100px;
+  margin-left: 20px;
+  margin-right: 0px;
 }
 
 .arrow {
   opacity: 0.0;          /* Opcional: aparência de desabilitado */
 }
 
-.faq-box{
-  margin-right: 100px;
-  margin-left: -100px;
-}
-
 .faq-box:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  }
-
-  .faq-box:hover .arrow {
-    transform: rotate(180deg);
   }
 
   .faq-box:hover .faq-resposta {
@@ -561,19 +560,12 @@ img{
   }
 
     .bg-sobre{
-        width: 100%;
         padding: 60px 0; /* Espaçamento vertical */
     }
-    .bg-servicos{
-        width: 100%;
-    }
-    .bg-paraquem{
-        width: 100%;
-    }
-    .bg-contato{
-        width: 100%;
-    }
 
+    .contato a {
+        font-size: 15px; /* Tamanho da fonte */
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) { /*Tablets*/
@@ -585,38 +577,35 @@ img{
         top: -6px; /* Ajuste para não colidir com a logo */
     }
 
-
     .logo-img {
         max-width: 45%;
+        margin-top: 10px;
     }
     
     header a{
         font-size: 22px;
     }
 
-    section{
-        margin-left: 80px; /* Espaço à direita */
-        margin-right: 100px; /* Espaço à direita */
-        text-align: justify;
-    }
-    
-    section#sobre-mim{
-        margin-left: 30px; /* Espaço à direita */
-        margin-right: 50px; /* Espaço à direita */
-        text-align: justify;
-        padding: 60px;
-    }
-
-    section#psicanalise{
-        padding: 40px;
-    }
 
     img{
         display: block;
         margin: 0 auto;
-        max-width: 100%;
-        height: auto;
+
       }
+
+      .arrow {
+  opacity: 0.0;          /* Opcional: aparência de desabilitado */
+}
+
+.faq-box:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .faq-box:hover .faq-resposta {
+    max-height: 500px;
+    opacity: 1;
+  }
+  
 
       .btn-contato{
         display: block;
@@ -638,18 +627,5 @@ img{
 
     .contato a {
         font-size: 25px; /* Tamanho da fonte */
-    }
-
-    .bg-sobre{
-        width: 100%;
-    }
-    .bg-servicos{
-        width: 100%;
-    }
-    .bg-paraquem{
-        width: 100%;
-    }
-    .bg-contato{
-        width: 100%;
     }
   }
