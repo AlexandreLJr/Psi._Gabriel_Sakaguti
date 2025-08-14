@@ -16,30 +16,26 @@
 </head>
 <body>
     
-  <header>
-  <!-- Logo -->
-  <div class="text-center mt-1 ps-5">
+  <header class="ps-5">
+  <div class="d-flex align-items-center justify-content-between">
+    <!-- Logo -->
     <a href="#inicio">
-      <img src="assets/Logo.jpg" alt="logo inicial" class="img-fluid logo-img" style="cursor: pointer;">
+      <img src="assets/Logo.jpg" alt="logo inicial" class="img-fluid logo-img">
     </a>
-  </div>
 
-  <!-- Menu Desktop -->
-  <div class="interface mt-4 d-none d-md-block">
-    <nav class="menu-desktop justify-content-center align-items-center text-center">
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre-mim">Sobre mim</a></li>
-        <li><a href="#abordagem">Abordagem</a></li>
-        <li><a href="#paraquem">Para quem</a></li>
-        <li><a href="#experiencia">Serviços</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contato">Contato</a></li>
+    <!-- Menu Desktop -->
+    <nav class="menu-desktop d-none d-md-block">
+      <ul class="d-flex m-0 list-unstyled">
+        <li class="ms-4"><a href="#inicio">Início</a></li>
+        <li class="ms-4"><a href="#servicos">Serviços</a></li>
+        <li class="ms-4"><a href="#paraquem">Para quem</a></li>
+        <li class="ms-4"><a href="#faq">FAQ</a></li>
+        <li class="ms-4"><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </div>
 
-  <!-- Menu Mobile Toggle -->
+<!-- Menu Mobile Toggle -->
   <div class="d-block d-md-none position-relative px-3">
     <input type="checkbox" id="menu-toggle" class="d-none" />
     <label for="menu-toggle" class="menu-icon">
@@ -50,10 +46,8 @@
     <nav class="menu-mobile">
       <ul>
         <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre-mim">Sobre mim</a></li>
-        <li><a href="#abordagem">Abordagem</a></li>
+        <li><a href="#servicos">Serviços</a></li>
         <li><a href="#paraquem">Para quem</a></li>
-        <li><a href="#experiencia">Serviços</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
@@ -61,74 +55,88 @@
   </div>
 </header>
 
-    <main>
+
+<main>
 <section id="inicio" class="topo-do-site mt-5">
             <div class="interface">
-                <div class="container mt-4">
-                    <div class="row">
-                        <div class="pt-2  col-md-6">
-                            <div class="txt-infos text-center fw-bold">
-                            <p>Gabriel Sakaguti
-                            <br>
-                            Psicólogo
-                            <br>
-                            CRP 01/26373
-                            </p>
-                                <a href="https://wa.me/5561996468420?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o!">
-                                    <button class="btn-contato-vinho mt-2 fw-bold">Agendar</button>
-                                </a>
-                            </div>
-                        </div>
-                <div class="pt-3 col-md-6">
-                    <div class=" txt-inicio ">
-                    <p>Olá, seja muito bem-vindo(a)!
-                    <br>
-                    Aqui você encontra informações sobre minha escuta clínica, minha
-                    abordagem e como agendar um primeiro encontro. 
-                    <br>
-                    Me chamo Gabriel Sakaguti, sou psicólogo clínico em Brasília- DF,
-                    ofereço psicoterapia presencial (Águas Claras e Asa Norte) e online
-                    para todo o Brasil. Me baseio na teoria psicanalítica, por uma escuta
-                    ativa e sensível. 
-                    <br>
-                    Acredito que cada pessoa carrega em si um mundo próprio, e que a
-                    terapia é um espaço onde se faz possível explorar, com cuidado, esses
-                    lugares internos e desconhecidos — cheio de silêncios, perguntas e
-                    desejos. Aqui, você encontra um lugar de acolhimento, reflexão e
-                    presença.
+                 <div class="flex d-flex justify-content-center">
+                    <div class="imagem-gabriel mt-2">
+                            <img src="assets/fotoGabrielHD.jpg" alt="foto-gabriel">
+                    </div>
+                    <div class=" txt-inicio ms-5">
+                    <p>Desde 2022, dedico meu trabalho ao cuidado com o outro, oferecendo um <b>espaço de
+                    escuta, reflexão e acolhimento.</b> Orientada pela <b>psicanálise,</b> busco olhar para aquilo que
+                    nos habita de forma silenciosa, difícil de nomear, mas que insiste em se fazer sentir,
+                    <b>muitas vezes carregando dores e angústias.</b> Minha própria trajetória de
+                    autoconhecimento mostrou que se conhecer não é chegar a respostas definitivas, mas
+                    sustentar um olhar atento para o que surge, mesmo no não saber. Assim, ofereço uma
+                    <b>escuta viva e sensível, acolhendo angústias, medos, incertezas, confusões e o que
+                    pode se tornar transformador.</b>
                     </p>
                     </div>
                 </div>
-                    </div>
-                        </div>
-                <div class="frase mt-5 text-center">
-                    <p>“Entre o que falta e o que dói, mora um espaço fértil. Ali começa o encontro.”</p>
-                </div>    
+                <div class="txt-infos fw-bold mt-3">
+                <p>Gabriel Sakaguti CRP 01/26373</p>
+                <a href="https://wa.me/5561996468420?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o!">
+                <button class="btn-contato-vinho mb-3 fw-bold ms-5">Agendar</button>
+                </a>
+                </div>  
             </div>
         </section>
 
-        <section id="sobre-mim" class="topo-do-site mt-5 bg-sobre">
+        <section id = "experiencia" class="experiencia mt-5 bg-experiencia">
             <div class="interface">
-                <div class="flex d-flex justify-content-center">
-                    <div class="txt-sobre-mim ps-5">
-                        <h1 class="fw-bold">Quem sou eu ?</h1>
-                        <p class="mt-4">Desde 2022, venho dedicando meu trabalho ao cuidado com o outro, oferecendo um espaço
-                        de escuta, reflexão e acolhimento.
-                        <br>
-                        Minha prática é orientada pela psicanálise, uma abordagem que me inspira a olhar para aquilo
-                        que nos habita de forma silenciosa, muitas vezes difícil de nomear, mas que insiste em se
-                        fazer sentir, por vezes carregando dores e angústias internas.
-                        <br>
-                        Minha própria trajetória de autoconhecimento foi marcada por dúvidas e incertezas. Com o
-                        tempo, percebi que o processo de se conhecer é menos sobre chegar a respostas definitivas e
-                        mais sobre sustentar um olhar atento para o que nos surge. Aprendi a estar em contato com o                            que não sei — e foi daí que nasceu o desejo de escutar o outro com essa presença e cuidado.
-                        <br>
-                        O espaço que ofereço é sustentado por uma escuta viva e sensível, que busca acolher
-                        angústias, medos, incertezas, aquilo que confunde e aquilo que pode ser transformador.
-                        </p>
+                <div class="txt-experiencia container mt-5">
+                    <h1 class="fw-bold tituloexp">Experiência em casos diagnósticos</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="esquerda mt-4">
+                                <ul>
+                                <li>Transtorno de ansiedade, pânico, Personalidade Bordeline</li>
+                                <li>Transtornos Relacionados a Trauma e Estressores (incluindo violência sexual)</li>
+                                <li>Fobias</li>
+                                <li>Conflitos de Relacionamentos</li>
+                                <li>Sintomas Psicossomáticos</li>
+                                </ul>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="direita mt-4">
+                                <ul>
+                                <li>Transtorno Depressivo, Obsessivo-Compulsivo - TOC, Autoimagem e Baixa Autoestima</li>
+                                <li>Comportamento de Autolesão</li>
+                                <li>Vícios</li>
+                                <li>Transtorno de Estresse Pós-Traumático</li>
+                                <li>Transtornos Alimentares</li>
+                                <li>Ideação Suicida</li>
+                                </ul>
+                        </div>
+                        </div>
                     </div>
-                    <div class="imagem-gabriel ps-5 mt-5">
-                        <img src="assets/fotoGabrielHD.jpg" alt="foto-gabriel">
+                </div>
+            </div>
+        </section>
+
+        <section id ="frase" class ="frase">
+            <div class="interface">
+                    <div class="frase2 mt-5 text-center fw-bold">
+                    <p>"O diagnóstico clínico não é um erro do corpo ou da mente — é uma forma de
+                    expressão que merece ser escutada com cuidado, e não apenas reduzida a um termo"</p>
+                    </div> 
+            </div>
+        </section>
+
+        <section id = "servicos" class="servicos mt-5 bg-servicos">
+            <div class="interface">
+                <div class="flex d-flex">
+                    <div class="txt-servicos ps-5">
+                        <h1 class="fw-bold">Serviços - Presencial e Online</h1>
+                        <p>Presencial : <b>Águas Claras Shopping, Águas Claras - DF, Setor Comercial Norte - Asa Norte - DF</b>
+                        <br>
+                        Online: <b>Para todo o Brasil</b>
+                        <br>
+                       <h3 class="fw-bold">Público: Adolescente, Adulto e Idoso.</h3>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -140,21 +148,20 @@
                 <div class="flex d-flex justify-content-center">
                     <div class="txt-abordagem ps-5">
                         <h1 class="fw-bold">Abordagem Teórica</h1>
-                        <p class="mt-3">A Psicanálise é uma teoria clínica que se dedica à escuta profunda dos processos psíquicos.
+                        <p class="mt-3">A psicanálise é uma teoria clínica voltada à escuta profunda dos processos psíquicos, reconhecendo que grande parte
+                        do que sentimos, pensamos e fazemos é atravessada por conteúdos inconscientes , experiências, desejos e afetos
+                        que influenciam nosso modo de ser, mesmo sem acesso direto.
                         <br> 
-                        Acredita-se que muito do que sentimos, pensamos e fazemos está atravessado por
-                        conteúdos inconscientes — ou seja, por experiências, desejos e afetos que não acessamos
-                        diretamente, mas que influenciam nosso modo de ser no mundo, nas relações, nos
-                        sintomas e nas escolhas. 
+                       Diferente de abordagens que oferecem soluções rápidas, aposta no processo, na escuta singular e na elaboração de
+                        sentido a partir da própria fala.
                         <br> 
                         Diferente de abordagens que buscam oferecer respostas rápidas e soluções práticas
                         imediatas, a psicanálise aposta no processo, na escuta singular e na elaboração de sentido
                         a partir da própria fala de quem chega. Trata-se de abrir um espaço onde a pessoa possa se
                         escutar de um modo que talvez nunca tenha experimentado antes. 
                         <br>
-                        O processo clínico é um convite ao questionamento, à investigação de si e ao encontro com
-                        aquilo que, muitas vezes, é difícil de reconhecer e aceitar. Cada sujeito traz um modo
-                        próprio de sofrer e também um modo singular de se transformar.
+                        O processo clínico convida ao questionamento, à investigação de si e ao encontro com o que é difícil reconhecer e
+                        aceitar, respeitando o modo único de cada pessoa sofrer e se transformar.
                     </p>
                     </div>
                 </div>
@@ -166,21 +173,17 @@
                 <div class="flex d-flex justify-content-center">
                     <div class="txt-paraquem ps-5">
                         <h1 class="fw-bold">Para quem é a terapia ?</h1>
-                        <p class="mt-3">A psicoterapia em psicanálise é indicada para quem deseja olhar para dentro com mais
-                        cuidado. Não é necessário ter um diagnóstico ou saber exatamente o que está acontecendo. 
+                        <p class="mt-3">A psicoterapia em psicanálise é indicada <b>para quem deseja olhar para dentro com mais
+                        cuidado.</b> Não é necessário ter um diagnóstico ou saber exatamente o que está acontecendo. 
                         <br> 
-                        Se você sente que algo não vai bem, está fora do lugar ou faltando, a terapia pode ser um
-                        caminho.
+                        Se algo parece fora do lugar, falta ou causa incômodo, a terapia pode ser um caminho.
                         <br> 
-                        Pessoas que enfrentam crises emocionais, conflitos nos relacionamentos, lutos, mudanças
-                        importantes na vida ou transições de fase podem encontrar na terapia um espaço de
-                        amparo e elaboração. Quem convive com sintomas como ansiedade, tristeza persistente,
-                        dificuldades para lidar com emoções ou outros sofrimentos psíquicos também pode se
-                        beneficiar.  
+                         É indicada para <b>quem enfrenta crises emocionais, conflitos, lutos, mudanças importantes ou sintomas como ansiedade,
+                        tristeza persistente e dificuldades para lidar com emoções.</b> 
                         <br>
-                        Procurar terapia é um gesto de cuidado e responsabilidade consigo mesmo. Se você sente
-                        que algo em você pede por escuta — mesmo que ainda seja difícil colocar em palavras —
-                        talvez esse seja o momento de começar.
+                        Procurar <b>terapia é um gesto de cuidado e responsabilidade consigo mesmo.</b> Se você sente
+                        que algo em <b>você pede por escuta — mesmo que ainda seja difícil colocar em palavras —
+                        talvez esse seja o momento de começar.</b>
                         </p>
                         <div class="mt-5 text-center">
                             <a href="https://wa.me/5561996468420?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o!">
@@ -192,64 +195,8 @@
             </div>
         </section>
 
-         <section id = "experiencia" class="experiencia mt-5">
-            <div class="interface">
-                <div class="txt-experiencia container mt-5">
-                    <h1 class="fw-bold tituloexp">Experiência em casos diagnósticos</h1>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="esquerda mt-4">
-                                <ul>
-                                <li>Transtorno de ansiedade</li>
-                                <li>Transtorno de Pânico</li>
-                                <li>Transtorno de Personalidade Borderline</li>
-                                <li>Transtorno de Burnout</li>
-                                <li>Transtornos Relacionados a Trauma e Estressores (incluindo violência sexual)</li>
-                                <li>Fobias</li>
-                                <li>Conflitos de Relacionamentos</li>
-                                <li>Sintomas Psicossomáticos</li>
-                                </ul>
-                        </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="direita mt-4">
-                                <ul>
-                                <li>Transtorno Depressivo</li>
-                                <li>Transtorno Obsessivo-Compulsivo - TOC</li>
-                                <li>Transtornos de Autoimagem e Baixa Autoestima</li>
-                                <li>Comportamento de Autolesão</li>
-                                <li>Vícios</li>
-                                <li>Transtorno de Estresse Pós-Traumático</li>
-                                <li>Transtornos Alimentares</li>
-                                <li>Ideação Suicida</li>
-                                </ul>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="frase2 mt-5 text-center">
-                    <p>O diagnóstico clínico não é um erro do corpo ou da mente — é uma forma de
-                    expressão que merece ser escutada com cuidado, e não apenas reduzida a um termo</p>
-                    </div> 
-                </div>
-            </div>
-        </section>
+         
 
-        <section id = "servicos" class="servicos mt-5 bg-servicos">
-            <div class="interface">
-                <div class="flex d-flex">
-                    <div class="txt-servicos ps-5">
-                        <h1 class="fw-bold">Serviços</h1>
-                        <h2>Atendimentos ocorrem de forma presencial e online.</h2>
-                        <p>Águas Claras Shopping, Águas Claras - DF.
-                        <br>
-                        Público: Adolescente, Adulto e Idoso.
-                        <br>
-                        Setor Comercial Norte - Asa Norte - DF 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section id="faq" class="faq container my-5">
             <h1 class="fw-bold titulofaq">Perguntas Frequentes</h1>

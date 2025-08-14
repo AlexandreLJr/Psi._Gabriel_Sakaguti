@@ -12,7 +12,7 @@ body{
 }
 
 main {
-    margin-top: 200px; /* Ajuste conforme a altura do cabeçalho e da logo */
+    margin-top: 100px; /* Ajuste conforme a altura do cabeçalho e da logo */
 }
 
 html {
@@ -26,7 +26,7 @@ html {
     height: auto; /* Mantém a proporção */
     display: block; /* Garante que as margens funcionem corretamente */
     margin: 0 auto; /* Centraliza horizontalmente */
-    max-width: 220px; /* Ajuste conforme necessário */
+    max-width: 180px; /* Ajuste conforme necessário */
     background-color: #F5F2EB; /* Mantém a aparência */
     width: 100%;
    
@@ -38,8 +38,8 @@ header {
     left: 0;
     width: 100%;
     background-color: #F5F2EB;
-    z-index: 1000; /* Garante que fique acima do conteúdo */
-    padding: 8px 0;
+    z-index: 1000; 
+    padding: 5px 100px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Pequeno sombreamento para destaque */
 }
 
@@ -63,8 +63,9 @@ header nav ul{
 
 header nav ul li{   
     display: inline-block;
-    padding: 0 40px;
+    padding: 0px 40px;
 }
+
 .menu-container {
   display: flex;
   justify-content: space-between;
@@ -83,16 +84,19 @@ header nav ul li{
 /* Menu mobile */
 .menu-mobile {
   display: none;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
+  position: relative;
   background: #F5F2EB;
   z-index: 1000;
-  padding: 1rem 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
   transition: all 0.3s ease-in-out;
+}
+
+.menu-mobile.active {
+  display: block;
+}
+
+.menu-mobile.open {
+  display: block;
 }
 
 .menu-mobile ul {
@@ -109,7 +113,8 @@ header nav ul li{
   color: #8B3A3A;
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
+  margin-left: 50px;
 }
 
 /* Mostrar menu quando o checkbox estiver marcado */
@@ -120,12 +125,16 @@ header nav ul li{
 
 /* Ícone do menu */
 .menu-icon {
+  position: fixed; /* Fixa no canto mesmo quando rolar a página */
+  top: 10px;       /* Distância do topo */
+  left: 10px;      /* Distância da esquerda */
   font-size: 40px;
   cursor: pointer;
   color: #8B3A3A;
-  position: relative;
-  top: -100px;
+  margin: 0;       /* Remove margens que empurram */
+  z-index: 9999;   /* Garante que fique sobre outros elementos */
 }
+
 
 
 /* Estilização básica do menu */
@@ -180,13 +189,25 @@ header nav ul li{
 
 .txt-infos{
     color: #8B3A3A;
-    font-size: 60px;
+    font-size: 44px;
+    display: flex;
+    flex-direction: row; /* Itens lado a lado */
+    justify-content: center; /* Centraliza no eixo horizontal */
+    align-items: center; /* Alinha no eixo vertical */
+    gap: 10px; /* Espaço entre texto e botão */
+    text-align: center;
+}
+.txt-infos p {
+    margin: 0; /* Remove espaçamento extra */
 }
 
 .txt-inicio{
-    font-size: 20px;
+    font-size: 25px;
     color: #8B3A3A;
+    margin-top: 80px;
+    margin-right: 100px;
 }
+
 
 .frase{
     font-size: 25px;
@@ -194,21 +215,12 @@ header nav ul li{
 }
 
 img{
-  height: 500px;
-  width: 350px;
+  height: 450px;
+  width: 320px;
   border-radius: 10px;
-    margin-right: 100px;
+  margin-top: 40px;
+    margin-left: 100px;
     margin-bottom: 25px;
-}
-
-.txt-sobre-mim{
-    margin-left: 100px; /* Espaço à direita */
-    margin-right: 10px; /* Espaço à direita */
-    text-align: justify;
-    color: white;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    font-size: 20px;
 }
 
 .btn-contato-vinho{
@@ -325,15 +337,17 @@ img{
 
 .txt-experiencia{
     font-size: 20px;
-    color: #8B3A3A;
+    color: white;
     margin-left: 120px; /* Espaço à direita */
     margin-right: 100px; /* Espaço à direita */
+    margin-bottom: 40px;
 }
 
 .frase2{
     font-size: 22px;
-    margin-left: 100px; /* Espaço à direita */
-    margin-right: 100px; /* Espaço à direita */
+    margin-left: 180px; /* Espaço à direita */
+    margin-right: 200px; /* Espaço à direita */
+    margin-bottom:50px;
 }
 
 .txt-servicos{
@@ -412,7 +426,7 @@ img{
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-.bg-sobre {
+.bg-experiencia {
   background-color: #8B3A3A; /* cor suave */
 }
 
@@ -435,7 +449,12 @@ section {
 
 
 @media screen and (max-width: 767px) { /*Celulares*/
-    .flex{
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+     .flex{
         flex-direction: column;
     }
 
@@ -443,6 +462,12 @@ section {
         display: none;
     }
      
+    .interface {
+      padding-left: 16px;  /* margem interna fixa */
+    padding-right: 16px; /* idem */
+    max-width: 500px; /* trava o conteúdo para sempre ter a mesma largura */
+    margin: 0 auto;   /* centraliza */
+  }
 
     header {
     top: -10px; /* Ajuste para não colidir com a logo */
@@ -451,18 +476,28 @@ section {
 }
 
     .logo-img {
-        width: 80%; /* opcional: redimensiona para telas menores */
-        max-width: 100%;
-        margin-right: 52px; /* Espaço à direita */
+        margin-left: 50px; /* Espaço à direita */
         margin-top: 10px;
         width : 250px
     }
 
-    .imagem-gabriel img {
-        margin-left: -5px;
-        margin-top: -50px;
-    }
+     #inicio .flex {
+    flex-direction: column; /* Coloca um embaixo do outro */
+  }
 
+  /* Opcional: garantir que o texto venha antes da imagem */
+  #inicio .txt-inicio {
+    order: 1;
+  }
+
+  #inicio .imagem-gabriel {
+    order: 2;
+  }
+
+    .imagem-gabriel img {
+        margin-left: 20px;
+        margin-top: 0px;
+      }
 
     .btn-contato{
         display: block;
@@ -473,24 +508,25 @@ section {
         text-decoration: none;
     }
     
-
     .txt-infos{
-      font-size: 70px;
-      margin-left: 50px;
-      margin-right: 40px;
-    }
+   display: flex;
+    flex-direction: column; /* texto em cima, botão embaixo */
+    align-items: center;    /* centraliza horizontalmente */
+    text-align: center;     /* centraliza o texto também */
+  }
+
+.txt-infos a {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    width: 100%; /* ocupa toda a largura para permitir centralização */
+    margin-right: 50px;
+  }
 
     .txt-inicio{
       margin-top: 20px;
-      margin-left: 45px;
-      margin-right: 20px;
+      margin-left: 50px;
+      margin-right: 45px;
     }
-
-    .frase{
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-
 
     .txt-sobre-mim{
       margin-top: -50px;
@@ -510,19 +546,24 @@ section {
 }
 
 .tituloexp{
-       margin-left: 50px;
+       margin-left: 20px;
        margin-right: 70px;
-       margin-top: -40px;
+       
 }
 
 .txt-experiencia{
-       margin-left: -10px;
+       margin-left: 10px;
        margin-right: 50px;
 }
 
+#experiencia .esquerda,
+  #experiencia .direita {
+    margin-top: 0 !important; /* remove o espaço entre elas */
+  }
+
 .frase2{
        margin-left: 30px;
-      margin-right: 20px;
+      margin-right: 30px;
 }
 
 .txt-servicos{
@@ -691,9 +732,8 @@ section {
   }
 
   .btn-contato-vinho{
-     
     margin-top: 80px;
-        font-size: 20px;
+    font-size: 20px;
   }
   
 
