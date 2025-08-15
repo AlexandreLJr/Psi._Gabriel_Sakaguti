@@ -206,12 +206,14 @@ header nav ul li{
     color: #8B3A3A;
     margin-top: 80px;
     margin-right: 100px;
+    margin-left: 40px;
 }
 
 
 .frase{
     font-size: 25px;
     color: #8B3A3A;
+    margin-bottom: -40px;
 }
 
 img{
@@ -320,9 +322,10 @@ img{
 
 .txt-abordagem{
     font-size: 20px;
-    color: #8B3A3A;
+    color: #ffffff;
     margin-right: 100px;
     margin-left: 100px;
+    margin-bottom: 40px;
 }
 
 .txt-paraquem{
@@ -463,7 +466,7 @@ body {
     }
      
     .interface {
-      padding-left: 16px;  /* margem interna fixa */
+    padding-left: 16px;  /* margem interna fixa */
     padding-right: 16px; /* idem */
     max-width: 500px; /* trava o conteúdo para sempre ter a mesma largura */
     margin: 0 auto;   /* centraliza */
@@ -610,66 +613,89 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) { /*Tablets*/
-    .flex{
+    body {
+    margin: 0;
+    padding: 0;
+  }
+
+     .flex{
         flex-direction: column;
     }
 
+    .menu-desktop{
+        display: none;
+    }
+     
+    .interface {
+    padding-left: 16px;  /* margem interna fixa */
+    padding-right: 16px; /* idem */
+    max-width: 500px; /* trava o conteúdo para sempre ter a mesma largura */
+    margin: 0 auto;   /* centraliza */
+  }
 
     header {
-        top: -6px; /* Ajuste para não colidir com a logo */
-    }
+    top: -10px; /* Ajuste para não colidir com a logo */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
     .logo-img {
-        max-width: 45%;
+        margin-left: 50px; /* Espaço à direita */
         margin-top: 10px;
-    }
-    
-    header a{
-        font-size: 22px;
+        width : 250px
     }
 
+    #inicio .txt-inicio {
+    order: 1;
+  }
+
+  #inicio .imagem-gabriel {
+    order: 2;
+  }
 
     .txt-infos{
-      margin-top: 40px;
       font-size: 60px;
-      margin-left: 50px;
-      margin-right: 40px;
-    }
+      margin-top: 10px;
+   display: flex;
+    flex-direction: column; /* texto em cima, botão embaixo */
+    align-items: center;    /* centraliza horizontalmente */
+    text-align: center;     /* centraliza o texto também */
+  }
 
     .txt-inicio{
-      margin-top: 30px;
+      font-size: 25px;
+      margin-top: 10px;
+      margin-left: -50px;
+      margin-right: -50px;
+
     }
 
     .frase{
-      margin-left: 40px;
-      margin-right: 40px;
+    margin-left: 0px;
+    margin-right: 00px;
     }
 
-
-    .txt-sobre-mim{
-      font-size: 25px;
-      margin-left: 2px;
-      margin-right: 40px;
-    }
 
     .imagem-gabriel img {
-      height: 600px;
-      width: 450px;
-        margin-left: 140px;
-        margin-top: -50px;
+      height: 700px;
+      width: 500px;
+      display: block; 
+      margin: 0 auto;
+      
+        
     }
    
 
     .txt-abordagem{
       font-size: 25px;
-      margin-left: 2px;
-      margin-right: 50px;
+      margin-left: -100px;
+      margin-right: -100px;
 }
 
  .txt-paraquem{
     font-size: 25px;
-       margin-left: 2px;
-      margin-right: 55px;
+    margin-left: -100px;
+    margin-right: -50px;
       
 }
 
@@ -677,39 +703,46 @@ body {
        margin-top: -40px;
 }
 
+#experiencia .esquerda,
+  #experiencia .direita {
+    margin-top: 0 !important; /* remove o espaço entre elas */
+  }
+
 .txt-experiencia{
   font-size: 25px;
-       margin-left: 50px;
-       margin-right: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .frase2{
-  font-size: 27px;  
+  font-size: 27px;
+  margin-left: -50px;
+  margin-right: -100px;  
 }
 
 .txt-servicos{
-       margin-left: 2px;
-       margin-right: 50px;
-    font-size: 30px;  
+  font-size: 25px;
+  margin-left: -100px;
+  margin-right: -100px;
 }
 
 .txt-contato{
-     margin-right: 40px;
-     font-size: 2px; 
+     margin-left: -100px;
+  margin-right: -50px;
 }
 
 .contato a {
-        font-size: 30px; /* Tamanho da fonte */
+        font-size: 25px; /* Tamanho da fonte */
     }
 
     .pergunta{
-      font-size: 25px;
+      font-size: 23px;
     }
 
     .faq{
   margin-left: 30px;
   margin-right: 0px;
-  font-size: 25px;
+  font-size: 18px;
 }
 
       .arrow {
@@ -726,14 +759,14 @@ body {
   }
 
   .btn-contato-branco{
-     display: block;
-        margin: 0 auto;
+
+        
         font-size: 20px;
   }
 
   .btn-contato-vinho{
-    margin-top: 80px;
     font-size: 20px;
+    
   }
   
 

@@ -96,6 +96,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.querySelector(".menu-icon");
+  const menuMobile = document.querySelector(".menu-mobile");
+
+  // Alterna o menu
+  menuIcon.addEventListener("click", function () {
+    menuMobile.classList.toggle("active");
+  });
+
+  // Fecha ao clicar em um item do menu
+  document.querySelectorAll(".menu-mobile a").forEach(link => {
+    link.addEventListener("click", function () {
+      menuMobile.classList.remove("active");
+    });
+  });
+
+  // Fecha ao clicar fora do menu
+  document.addEventListener("click", function (e) {
+    if (!menuMobile.contains(e.target) && !menuIcon.contains(e.target)) {
+      menuMobile.classList.remove("active");
+    }
+  });
+});
+
 
 
 
