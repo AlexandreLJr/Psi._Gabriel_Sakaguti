@@ -498,8 +498,10 @@ body {
   }
 
     .imagem-gabriel img {
-        margin-left: 20px;
-        margin-top: 0px;
+        height: auto;            /* deixa responsivo */
+    width: 90%;              /* ocupa 80% da largura da tela */
+    margin: 20px auto 25px;  /* centraliza automaticamente */
+    display: block;  
       }
 
     .btn-contato{
