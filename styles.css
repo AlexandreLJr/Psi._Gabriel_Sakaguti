@@ -473,7 +473,7 @@ body {
   }
 
     header {
-    top: -10px; /* Ajuste para não colidir com a logo */
+    top: -11px; /* Ajuste para não colidir com a logo */
     margin-bottom: 0;
     padding-bottom: 0;
 }
