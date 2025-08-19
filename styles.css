@@ -479,7 +479,7 @@ body {
 }
 
     .logo-img {
-        margin-left: 50px; /* Espaço à direita */
+        margin-left: 65px; /* Espaço à direita */
         margin-top: 10px;
         width : 250px
     }
@@ -620,13 +620,23 @@ body {
     padding: 0;
   }
 
+
      .flex{
         flex-direction: column;
     }
 
     .menu-desktop{
-        display: none;
+        display: none !important;
     }
+
+    .menu-mobile {
+    display: none !important; /* Só aparece quando ativado */
+  }
+
+  .menu-icon {
+    display: block !important; /* força aparecer */
+  }
+
      
     .interface {
     padding-left: 16px;  /* margem interna fixa */
@@ -639,12 +649,13 @@ body {
     top: -10px; /* Ajuste para não colidir com a logo */
     margin-bottom: 0;
     padding-bottom: 0;
+    
 }
 
     .logo-img {
-        margin-left: 50px; /* Espaço à direita */
-        margin-top: 10px;
-        width : 250px
+        margin-left: 260px; /* Espaço à direita */
+        margin-top: 15px;
+        width : 300px
     }
 
     #inicio .txt-inicio {
@@ -656,9 +667,9 @@ body {
   }
 
     .txt-infos{
-      font-size: 60px;
-      margin-top: 10px;
-   display: flex;
+    font-size: 60px;
+    margin-top: 10px;
+    display: flex;
     flex-direction: column; /* texto em cima, botão embaixo */
     align-items: center;    /* centraliza horizontalmente */
     text-align: center;     /* centraliza o texto também */
@@ -673,8 +684,8 @@ body {
     }
 
     .frase{
-    margin-left: 0px;
-    margin-right: 00px;
+      margin-left: 0px;
+      margin-right: 00px;
     }
 
 
