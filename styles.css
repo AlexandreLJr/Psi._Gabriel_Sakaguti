@@ -624,7 +624,6 @@ body {
     padding: 0;
   }
 
-
      .flex{
         flex-direction: column;
     }
@@ -634,20 +633,25 @@ body {
     }
 
     .menu-mobile {
-    display: none !important; /* Só aparece quando ativado */
+    display: none; /* Só aparece quando ativado */
   }
+
+  .menu-mobile.active {
+  display: block !important; /* ou flex, dependendo do layout */
+}
+
+.menu-mobile ul li a {
+  font-size: 21px;
+}
 
   /* Ícone do menu */
 .menu-icon {
-   display: block !important;
-  position: fixed !important; /* Fixa no canto mesmo quando rolar a página */
-  top: 22px;       /* Distância do topo */
+  top: 18px;       /* Distância do topo */
   left: 20px;      /* Distância da esquerda */
-  font-size: 40px;
+  font-size: 45px;
   cursor: pointer;
   color: #8B3A3A;
   margin: 0;       /* Remove margens que empurram */
-  z-index: 9999 !important;   /* Garante que fique sobre outros elementos */
 }
 
      
