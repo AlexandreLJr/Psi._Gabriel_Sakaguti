@@ -546,6 +546,10 @@ body {
       text-align: justify;
 }
 
+.tituloparaquem{
+  text-align: left;
+}
+
  .txt-paraquem{
        margin-left: 2px;
       margin-right: 40px;
@@ -718,6 +722,7 @@ body {
       margin-right: -60px;
       text-align: justify;
 }
+
 
  .txt-paraquem{
     font-size: 25px;
