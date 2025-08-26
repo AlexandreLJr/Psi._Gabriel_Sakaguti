@@ -516,6 +516,10 @@ body {
         text-decoration: none;
     }
     
+.txt-inicio{
+  text-align: justify;
+}
+
     .txt-infos{
    display: flex;
     flex-direction: column; /* texto em cima, botão embaixo */
@@ -536,34 +540,26 @@ body {
       margin-right: 45px;
     }
 
-    .txt-sobre-mim{
-      margin-top: -50px;
-      margin-left: 2px;
-      margin-right: 40px;
-    }
-
     .txt-abordagem{
       margin-left: 2px;
       margin-right: 50px;
+      text-align: justify;
 }
 
  .txt-paraquem{
        margin-left: 2px;
       margin-right: 40px;
-      text-align: left;
+      text-align: justify;
       
 }
 
 .tituloexp{
        margin-left: 20px;
        margin-right: 70px;
+       text-align: justify;
        
 }
 
-.txt-experiencia{
-       margin-left: 10px;
-       margin-right: 50px;
-}
 
 #experiencia .esquerda,
   #experiencia .direita {
@@ -697,7 +693,7 @@ body {
       margin-top: 10px;
       margin-left: -50px;
       margin-right: -50px;
-
+      text-align: justify;
     }
 
     .frase{
@@ -719,14 +715,15 @@ body {
     .txt-abordagem{
       font-size: 25px;
       margin-left: -100px;
-      margin-right: -100px;
+      margin-right: -60px;
+      text-align: justify;
 }
 
  .txt-paraquem{
     font-size: 25px;
     margin-left: -100px;
     margin-right: -50px;
-      
+    text-align: justify;
 }
 
 .tituloexp{
@@ -738,16 +735,10 @@ body {
     margin-top: 0 !important; /* remove o espaço entre elas */
   }
 
-.txt-experiencia{
-  font-size: 25px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
 .frase2{
   font-size: 27px;
   margin-left: -50px;
-  margin-right: -100px;  
+  margin-right: -50px;  
 }
 
 .txt-servicos{
@@ -757,7 +748,7 @@ body {
 }
 
 .txt-contato{
-     margin-left: -100px;
+  margin-left: -100px;
   margin-right: -50px;
 }
 
