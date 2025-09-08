@@ -1,138 +1,136 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "PT Serif", serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "PT Serif", serif;
 }
 
-  
+
 body{
-    background-color: #F5F2EB;
-    overflow-x: hidden;
+background-color: #F5F2EB;
+overflow-x: hidden;
 }
 
 main {
-    margin-top: 100px; /* Ajuste conforme a altura do cabeçalho e da logo */
+margin-top: 100px; /* Ajuste conforme a altura do cabeçalho e da logo */
 }
 
 html {
-    scroll-padding-top: 90px; /* Ajuste conforme a altura do cabeçalho */
-    overflow-x: hidden;
-   
+scroll-padding-top: 90px; /* Ajuste conforme a altura do cabeçalho */
+overflow-x: hidden;
 }
 
 
 .logo-img {
-    height: auto; /* Mantém a proporção */
-    display: block; /* Garante que as margens funcionem corretamente */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    max-width: 180px; /* Ajuste conforme necessário */
-    background-color: #F5F2EB; /* Mantém a aparência */
-    width: 100%;
-   
+height: auto; /* Mantém a proporção */
+display: block; /* Garante que as margens funcionem corretamente */
+margin: 0 auto; /* Centraliza horizontalmente */
+max-width: 180px; /* Ajuste conforme necessário */
+background-color: #F5F2EB; /* Mantém a aparência */
+width: 100%;
 }
 
 header {
-    position: fixed;
-    top: 0px; /* Ajuste para não colidir com a logo */
-    left: 0;
-    width: 100%;
-    background-color: #F5F2EB;
-    z-index: 1000; 
-    padding: 5px 100px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Pequeno sombreamento para destaque */
+position: fixed;
+top: 0px; /* Ajuste para não colidir com a logo */
+left: 0;
+width: 100%;
+background-color: #F5F2EB;
+z-index: 1000; 
+padding: 5px 100px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Pequeno sombreamento para destaque */
 }
 
 
 header a{
-    color: #8B3A3A;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    transition: .4s;
+color: #8B3A3A;
+text-decoration: none;
+display: inline-block;
+font-size: 18px;
+transition: .4s;
 }
 
 header a:hover{
-    color: #5f1010;
-    transform: scale(1.1);
+color: #5f1010;
+transform: scale(1.1);
 }
 
 header nav ul{
-    list-style-type: none;
+list-style-type: none;
 }
 
 header nav ul li{   
-    display: inline-block;
-    padding: 0px 40px;
+display: inline-block;
+padding: 0px 40px;
 }
 
 .menu-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-inline: 1rem;
 }
 
 /* Ícone do menu */
 .menu-icon {
-  font-size: 30px;
-  cursor: pointer;
-  display: inline-block;
-  user-select: none;
+font-size: 30px;
+cursor: pointer;
+display: inline-block;
+user-select: none;
 }
 
 /* Menu mobile */
 .menu-mobile {
-  display: none;
-  position: relative;
-  background: #F5F2EB;
-  z-index: 1000;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
+display: none;
+position: relative;
+background: #F5F2EB;
+z-index: 1000;
+text-align: center;
+transition: all 0.3s ease-in-out;
 }
 
 .menu-mobile.active {
-  display: block;
+display: block;
 }
 
 .menu-mobile.open {
-  display: block;
+display: block;
 }
 
 .menu-mobile ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 
 .menu-mobile ul li {
-  margin-bottom: 1rem;
+margin-bottom: 1rem;
 }
 
 .menu-mobile ul li a {
-  color: #8B3A3A;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  margin-left: 50px;
+color: #8B3A3A;
+text-decoration: none;
+font-weight: 500;
+font-size: 16px;
+margin-left: 50px;
 }
 
 /* Mostrar menu quando o checkbox estiver marcado */
 #menu-toggle:checked ~ .menu-mobile {
-  display: block;
+display: block;
 }
 
 
 /* Ícone do menu */
 .menu-icon {
-  position: fixed; /* Fixa no canto mesmo quando rolar a página */
-  top: 10px;       /* Distância do topo */
-  left: 10px;      /* Distância da esquerda */
-  font-size: 40px;
-  cursor: pointer;
-  color: #8B3A3A;
-  margin: 0;       /* Remove margens que empurram */
-  z-index: 9999;   /* Garante que fique sobre outros elementos */
+position: fixed; /* Fixa no canto mesmo quando rolar a página */
+top: 10px;       /* Distância do topo */
+left: 10px;      /* Distância da esquerda */
+font-size: 40px;
+cursor: pointer;
+color: #8B3A3A;
+margin: 0;       /* Remove margens que empurram */
+z-index: 9999;   /* Garante que fique sobre outros elementos */
 }
 
 
@@ -140,664 +138,639 @@ header nav ul li{
 /* Estilização básica do menu */
 .menu ul,
 .menu-mobile ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 
 .menu ul li,
 .menu-mobile ul li {
-  margin: 10px 0;
+margin: 10px 0;
 }
 
 .menu ul li a,
 .menu-mobile ul li a {
-  text-decoration: none;
-  color: #8B3A3A;
-  font-weight: 500;
-  transition: color 0.3s;
+text-decoration: none;
+color: #8B3A3A;
+font-weight: 500;
+transition: color 0.3s;
 }
 
 .menu ul li a:hover,
 .menu-mobile ul li a:hover {
-  color: #8B3A3A;
+color: #8B3A3A;
 }
 
 /* Para telas maiores que 768px */
 @media screen and (min-width: 768px) {
-  .menu {
-    display: block !important;
-  }
-
-  .menu ul {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu-icon {
-  margin-top: -10px; /* ajuste fino */
+.menu {
+display: block !important;
 }
 
-  .menu-mobile {
-    display: none !important;
-  }
+.menu ul {
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
+
+.menu-icon {
+margin-top: -10px; /* ajuste fino */
+}
+
+.menu-mobile {
+display: none !important;
+}
 }
 
 
 
 .txt-infos{
-    color: #8B3A3A;
-    font-size: 44px;
-    display: flex;
-    flex-direction: row; /* Itens lado a lado */
-    justify-content: center; /* Centraliza no eixo horizontal */
-    align-items: center; /* Alinha no eixo vertical */
-    gap: 10px; /* Espaço entre texto e botão */
-    text-align: center;
+color: #8B3A3A;
+font-size: 44px;
+display: flex;
+flex-direction: row; /* Itens lado a lado */
+justify-content: center; /* Centraliza no eixo horizontal */
+align-items: center; /* Alinha no eixo vertical */
+gap: 10px; /* Espaço entre texto e botão */
+text-align: center;
 }
 .txt-infos p {
-    margin: 0; /* Remove espaçamento extra */
+margin: 0; /* Remove espaçamento extra */
 }
 
 .txt-inicio{
-    font-size: 25px;
-    color: #8B3A3A;
-    margin-top: 80px;
-    margin-right: 100px;
-    margin-left: 40px;
+font-size: 25px;
+color: #8B3A3A;
+margin-top: 80px;
+margin-right: 100px;
+margin-left: 40px;
 }
 
 
 .frase{
-    font-size: 25px;
-    color: #8B3A3A;
-    margin-bottom: -40px;
+font-size: 25px;
+color: #8B3A3A;
+margin-bottom: -40px;
 }
 
 img{
-  height: 450px;
-  width: 320px;
-  border-radius: 10px;
-  margin-top: 40px;
-    margin-left: 100px;
-    margin-bottom: 25px;
+height: 450px;
+width: 320px;
+border-radius: 10px;
+margin-top: 40px;
+margin-left: 100px;
+margin-bottom: 25px;
 }
 
 .btn-contato-vinho{
-  padding: 18px 70px;          /* Ajuste o tamanho aqui */
-  border: none;                /* Remove a borda */
-  border-radius: 8px;
-  background: #8B3A3A;
-  color: white;
-  font-size: 16px;             /* Ajuste o tamanho da fonte aqui */
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 1.25;
-  user-select: none;
-  position: relative;
-  overflow: hidden;
-  transition: background-color .6s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    &:after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-      top: 50%;
-      left: 50%;
-      top: var(--mouse-y);
-      left: var(--mouse-x);
-      transform-style: flat;
-      transform: translate3d(-50%,-50%,0);
-      background: rgba(white,.1);
-      border-radius: 100%;
-      transition: width .3s ease, height .3s ease;
-    }
-    &:focus,
-    &:hover {
-        background: #5f1010;
-    }
-    &:active {
-      &:after {
-        width: 300px;
-        height: 600px;
-      }
-    }
-  }
-
-.btn-contato-vinho:hover{
-    color: #ffffff;
-    background-color:#701010;
+padding: 18px 70px;          /* Ajuste o tamanho aqui */
+border: none;                /* Remove a borda */
+border-radius: 8px;
+background: #8B3A3A;
+color: white;
+font-size: 16px;             /* Ajuste o tamanho da fonte aqui */
+letter-spacing: .08em;
+text-transform: uppercase;
+text-decoration: none;
+line-height: 1.25;
+user-select: none;
+position: relative;
+overflow: hidden;
+transition: background-color .6s ease;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+&:after {
+content: "";
+position: absolute;
+width: 0;
+height: 0;
+top: 50%;
+left: 50%;
+top: var(--mouse-y);
+left: var(--mouse-x);
+transform-style: flat;
+transform: translate3d(-50%,-50%,0);
+background: rgba(white,.1);
+border-radius: 100%;
+transition: width .3s ease, height .3s ease;
+}
+&:focus,
+&:hover {
+background: #5f1010;
+}
+&:active {
+&:after {
+width: 300px;
+height: 600px;
+}
+}
 }
 
-.btn-contato-branco{
-  padding: 18px 70px;          /* Ajuste o tamanho aqui */
-  border: none;                /* Remove a borda */
-  border-radius: 8px;
-  background: #F5F2EB;
-  color: #8B3A3A;
-  font-size: 16px;             /* Ajuste o tamanho da fonte aqui */
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 1.25;
-  user-select: none;
-  position: relative;
-  overflow: hidden;
-  transition: background-color .6s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    &:after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-      top: 50%;
-      left: 50%;
-      
-      transform-style: flat;
-      transform: translate3d(-50%,-50%,0);
-      background: rgba(white,.1);
-      border-radius: 100%;
-      transition: width .3s ease, height .3s ease;
-    }
-    &:focus,
-    &:hover {
-        background: #b0aeaa;;
-    }
-    &:active {
-      &:after {
-        width: 300px;
-        height: 300px;
-      }
-    }
-  }
-
-.btn-contato-branco:hover{
-    color: #8B3A3A;
-    background-color:#ffdede;
+.btn-contato-vinho:hover{
+color: #ffffff;
+background-color:#701010;
 }
 
 .txt-abordagem{
-    font-size: 20px;
-    color: #ffffff;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-bottom: 40px;
+font-size: 20px;
+color: #ffffff;
+margin-right: 100px;
+margin-left: 100px;
+margin-bottom: 40px;
 }
 
 .txt-paraquem{
-    margin-left: 100px; /* Espaço à direita */
-    margin-right: 100px; /* Espaço à direita */
-    text-align: justify;
-    color: #8B3A3A;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    font-size: 20px;
+margin-left: 100px; /* Espaço à direita */
+margin-right: 100px; /* Espaço à direita */
+text-align: justify;
+color: #8B3A3A;
+padding-bottom: 40px;
+padding-top: 40px;
+font-size: 20px;
 }
 
 .txt-experiencia{
-    font-size: 20px;
-    color: white;
-    margin-left: 120px; /* Espaço à direita */
-    margin-right: 100px; /* Espaço à direita */
-    margin-bottom: 40px;
+font-size: 20px;
+color: white;
+margin-left: 120px; /* Espaço à direita */
+margin-right: 100px; /* Espaço à direita */
+margin-bottom: 40px;
 }
 
 .frase2{
-    font-size: 22px;
-    margin-left: 50px; /* Espaço à direita */
-    margin-right: 50px; /* Espaço à direita */
-    margin-bottom:50px;
+font-size: 22px;
+margin-left: 50px; /* Espaço à direita */
+margin-right: 50px; /* Espaço à direita */
+margin-bottom:50px;
 }
 
 .txt-servicos{
-    margin-left: 100px; /* Espaço à direita */
-    margin-right: 100px; /* Espaço à direita */
-    text-align: left;
-    color: white;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    font-size: 20px;
+margin-left: 100px; /* Espaço à direita */
+margin-right: 100px; /* Espaço à direita */
+text-align: left;
+color: white;
+padding-bottom: 40px;
+padding-top: 40px;
+font-size: 20px;
 }
 
 .faq{
-    color: #F5F2EB;
-    margin-left: 100px; /* Espaço à direita */
-    margin-right: 100px;
-    margin-bottom: 70px;
-    margin-top: 50px;
-    
+color: #F5F2EB;
+margin-left: 100px; /* Espaço à direita */
+margin-right: 100px;
+margin-bottom: 70px;
+margin-top: 50px;
+
 }
 
 .faq-box {
-  background-color:  #F5F2EB;
-  color: #8B3A3A;
-  cursor: pointer;
-  transition: background-color 0.4s ease, box-shadow 0.4s ease;
-  border: 20px solid #ddd;
-  border-radius: 20px;
+background-color:  #F5F2EB;
+color: #8B3A3A;
+cursor: pointer;
+transition: background-color 0.4s ease, box-shadow 0.4s ease;
+border: 20px solid #ddd;
+border-radius: 20px;
 }
 
 /* Efeito suave no hover */
 .faq-box:hover {
-  background-color: #F5F2EB;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+background-color: #F5F2EB;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
 }
 
 /* Resposta escondida inicialmente, mas com transição suave */
 .faq-resposta {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.7s ease, opacity 0.2s ease;
+max-height: 0;
+overflow: hidden;
+opacity: 0;
+transition: max-height 0.7s ease, opacity 0.2s ease;
 }
 
 /* Quando ativa */
 .faq-box.active .faq-resposta {
-  max-height: 500px; /* valor alto o suficiente para mostrar o conteúdo */
-  opacity: 1;
+max-height: 500px; /* valor alto o suficiente para mostrar o conteúdo */
+opacity: 1;
 }
 
 /* Setinha com rotação suave */
 .arrow {
-  font-size: 1.25rem;
-  transition: transform 0.7s ease;
+font-size: 1.25rem;
+transition: transform 0.7s ease;
 }
 
 /* Rotaciona a seta */
 .faq-box.active .arrow {
-  transform: rotate(180deg);
+transform: rotate(180deg);
 }
 
 .txt-contato{
-    text-align: justify;
-    color: #8B3A3A;
-    padding-bottom: 40px;
-    padding-top: 20px;
-    font-size: 20px;
+text-align: justify;
+color: #8B3A3A;
+padding-bottom: 40px;
+padding-top: 20px;
+font-size: 20px;
 }
 
 .contato a {
-    font-size: 20px; /* Tamanho da fonte */
-    color: #8B3A3A; /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
-    transition: color 0.3s ease-in-out; /* Suaviza a mudança de cor */
+font-size: 20px; /* Tamanho da fonte */
+color: #8B3A3A; /* Cor do link */
+text-decoration: none; /* Remove o sublinhado */
+transition: color 0.3s ease-in-out; /* Suaviza a mudança de cor */
 }
 
 .contato a:hover {
-    color: #8B3A3A;;
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+color: #8B3A3A;;
+text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
 .bg-experiencia {
-  background-color: #8B3A3A; /* cor suave */
+background-color: #8B3A3A; /* cor suave */
 }
 
 .bg-faq {
-  background-color: #8B3A3A;
+background-color: #8B3A3A;
 }
 
 .bg-servicos {
-  background-color: #8B3A3A;/* cor diferente para contraste */
+background-color: #8B3A3A;/* cor diferente para contraste */
 }
 
 .bg-contato {
-  background-color: #8B3A3A; /* outro tom suave */
+background-color: #8B3A3A; /* outro tom suave */
+}
+
+.footer {
+background-color: #F5F2EB;
+color: #8B3A3A;
+font-size: 0.9rem;
+font-family: 'Crimson Text', serif;
+border-top: 1px solid #ddd;
+justify-content: center;
+box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Pequeno sombreamento para destaque */
+margin-top: 50px;
+}
+
+.footer a {
+color: #8B3A3A;
+text-decoration: none;
+font-weight: bold;
+justify-content: center;
+}
+
+.footer a:hover {
+color: #790909;
+text-decoration: underline;
+}
+
+.footer p {
+margin: 0.2rem 0;
 }
 
 section {
-  width: 100vw;
-  overflow-x: hidden;
+width: 100vw;
+overflow-x: hidden;
 }
-
 
 @media screen and (max-width: 767px) { /*Celulares*/
 body {
-    margin: 0;
-    padding: 0;
-  }
-
-     .flex{
-        flex-direction: column;
-    }
-
-    .menu-desktop{
-        display: none;
-    }
-     
-    .interface {
-    padding-left: 16px;  /* margem interna fixa */
-    padding-right: 16px; /* idem */
-    max-width: 500px; /* trava o conteúdo para sempre ter a mesma largura */
-    margin: 0 auto;   /* centraliza */
-  }
-
-    header {
-    top: -11px; /* Ajuste para não colidir com a logo */
-    margin-bottom: 0;
-    padding-bottom: 0;
+margin: 0;
+padding: 0;
 }
 
-    .logo-img {
-        margin-left: 65px; /* Espaço à direita */
-        margin-top: 10px;
-        width : 250px
-    }
+.flex{
+flex-direction: column;
+}
 
-     #inicio .flex {
-    flex-direction: column; /* Coloca um embaixo do outro */
-  }
+.menu-desktop{
+display: none;
+}
 
-  /* Opcional: garantir que o texto venha antes da imagem */
-  #inicio .txt-inicio {
-    order: 1;
-  }
+.interface {
+padding-left: 16px;  /* margem interna fixa */
+padding-right: 16px; /* idem */
+max-width: 500px; /* trava o conteúdo para sempre ter a mesma largura */
+margin: 0 auto;   /* centraliza */
+}
 
-  #inicio .imagem-gabriel {
-    order: 2;
-  }
+header {
+top: -11px; /* Ajuste para não colidir com a logo */
+margin-bottom: 0;
+padding-bottom: 0;
+}
 
-    .imagem-gabriel img {
-        height: auto;            /* deixa responsivo */
-    width: 90%;              /* ocupa 80% da largura da tela */
-    margin: 20px auto 25px;  /* centraliza automaticamente */
-    display: block;  
-      }
+.logo-img {
+margin-left: 65px; /* Espaço à direita */
+margin-top: 10px;
+width : 250px
+}
 
-    .btn-contato{
-        display: block;
-        margin: 0 auto;
-    }
+#inicio .flex {
+flex-direction: column; /* Coloca um embaixo do outro */
+}
 
-    a {
-        text-decoration: none;
-    }
-    
+/* Opcional: garantir que o texto venha antes da imagem */
+#inicio .txt-inicio {
+order: 1;
+}
+
+#inicio .imagem-gabriel {
+order: 2;
+}
+
+.imagem-gabriel img {
+height: auto;            /* deixa responsivo */
+width: 90%;              /* ocupa 80% da largura da tela */
+margin: 20px auto 25px;  /* centraliza automaticamente */
+display: block;  
+}
+
+.btn-contato{
+display: block;
+margin: 0 auto;
+}
+
+a {
+text-decoration: none;
+}
+
 .txt-inicio{
-  text-align: justify;
+text-align: justify;
 }
 
-    .txt-infos{
-   display: flex;
-    flex-direction: column; /* texto em cima, botão embaixo */
-    align-items: center;    /* centraliza horizontalmente */
-    text-align: center;     /* centraliza o texto também */
-  }
+.txt-infos{
+display: flex;
+flex-direction: column; /* texto em cima, botão embaixo */
+align-items: center;    /* centraliza horizontalmente */
+text-align: center;     /* centraliza o texto também */
+}
 
-    .txt-infos a {
-        display: flex;
-        justify-content: center; /* centraliza horizontalmente */
-        width: 100%; /* ocupa toda a largura para permitir centralização */
-        margin-right: 50px;
-  }
+.txt-infos a {
+display: flex;
+justify-content: center; /* centraliza horizontalmente */
+width: 100%; /* ocupa toda a largura para permitir centralização */
+margin-right: 50px;
+}
 
-    .txt-inicio{
-      margin-top: 20px;
-      margin-left: 50px;
-      margin-right: 45px;
-    }
+.txt-inicio{
+margin-top: 20px;
+margin-left: 50px;
+margin-right: 45px;
+}
 
-    .txt-abordagem{
-      margin-left: 2px;
-      margin-right: 50px;
-      text-align: justify;
+.txt-abordagem{
+margin-left: 2px;
+margin-right: 50px;
+text-align: justify;
 }
 
 .tituloparaquem{
-  text-align: left;
+text-align: left;
 }
 
- .txt-paraquem{
-       margin-left: 2px;
-      margin-right: 40px;
-      text-align: justify;
-      
+.txt-paraquem{
+margin-left: 2px;
+margin-right: 40px;
+text-align: justify;
+
 }
 
 .tituloexp{
-       margin-left: 20px;
-       margin-right: 70px;
-       text-align: justify;
-       
+margin-left: 20px;
+margin-right: 70px;
+text-align: justify;
+
 }
 
 
 #experiencia .esquerda,
-  #experiencia .direita {
-    margin-top: 0 !important; /* remove o espaço entre elas */
-  }
+#experiencia .direita {
+margin-top: 0 !important; /* remove o espaço entre elas */
+}
 
 .frase2{
-       margin-left: 0px;
-      margin-right: 0px;
+margin-left: 0px;
+margin-right: 0px;
 }
 
 .txt-servicos{
-       margin-left: 2px;
-       margin-right: 50px;
-    
+margin-left: 2px;
+margin-right: 50px;
+
 }
 
 .txt-contato{
-     margin-right: 40px;
-     font-size: 2px; 
+margin-right: 40px;
+font-size: 2px; 
 }
 
 .faq{
-  margin-left: 0px;
-  margin-right: 0px;
+margin-left: 0px;
+margin-right: 0px;
 }
 
 .titulofaq{
-  margin-left: 20px;
-  margin-right: 0px;
+margin-left: 20px;
+margin-right: 0px;
 }
 
 .arrow {
-  opacity: 0.0;          /* Opcional: aparência de desabilitado */
+opacity: 0.0;          /* Opcional: aparência de desabilitado */
 }
 
 .faq-box:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  }
-
-  .faq-box:hover .faq-resposta {
-    max-height: 500px;
-    opacity: 1;
-  }
-
-    .bg-sobre{
-        padding: 60px 0; /* Espaçamento vertical */
-    }
-
-    .contato a {
-        font-size: 15px; /* Tamanho da fonte */
-    }
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) { /*Tablets*/
-    body {
-    margin: 0;
-    padding: 0;
-  }
-
-     .flex{
-        flex-direction: column;
-    }
-
-    .menu-desktop{
-        display: none !important;
-    }
-
-    .menu-mobile {
-    display: none; /* Só aparece quando ativado */
-  }
-
-  .menu-mobile.active {
-  display: block !important; /* ou flex, dependendo do layout */
+.faq-box:hover .faq-resposta {
+max-height: 500px;
+opacity: 1;
 }
 
-.menu-mobile ul li a {
-  font-size: 21px;
-}
-
-  /* Ícone do menu */
-.menu-icon {
-  top: 18px;       /* Distância do topo */
-  left: 20px;      /* Distância da esquerda */
-  font-size: 45px;
-  cursor: pointer;
-  color: #8B3A3A;
-  margin: 0;       /* Remove margens que empurram */
-}
-
-     
-    .interface {
-    padding-left: 16px;  /* margem interna fixa */
-    padding-right: 16px; /* idem */
-    max-width: 500px; /* trava o conteúdo para sempre ter a mesma largura */
-    margin: 0 auto;   /* centraliza */
-  }
-
-    header {
-    top: -10px; /* Ajuste para não colidir com a logo */
-    margin-bottom: 0;
-    padding-bottom: 0;
-    
-}
-
-    .logo-img {
-        margin-left: 260px; /* Espaço à direita */
-        margin-top: 15px;
-        width : 300px
-    }
-
-    #inicio .txt-inicio {
-    order: 1;
-  }
-
-  #inicio .imagem-gabriel {
-    order: 2;
-  }
-
-    .txt-infos{
-    font-size: 60px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column; /* texto em cima, botão embaixo */
-    align-items: center;    /* centraliza horizontalmente */
-    text-align: center;     /* centraliza o texto também */
-  }
-
-    .txt-inicio{
-      font-size: 25px;
-      margin-top: 10px;
-      margin-left: -50px;
-      margin-right: -50px;
-      text-align: justify;
-    }
-
-    .frase{
-      margin-left: 0px;
-      margin-right: 00px;
-    }
-
-
-    .imagem-gabriel img {
-      height: 700px;
-      width: 500px;
-      display: block; 
-      margin: 0 auto;
-      
-        
-    }
-   
-
-    .txt-abordagem{
-      font-size: 25px;
-      margin-left: -100px;
-      margin-right: -60px;
-      text-align: justify;
-}
-
-
- .txt-paraquem{
-    font-size: 25px;
-    margin-left: -100px;
-    margin-right: -50px;
-    text-align: justify;
-}
-
-.tituloexp{
-       margin-top: -40px;
-}
-
-#experiencia .esquerda,
-  #experiencia .direita {
-    margin-top: 0 !important; /* remove o espaço entre elas */
-  }
-
-.frase2{
-  font-size: 27px;
-  margin-left: -50px;
-  margin-right: -50px;  
-}
-
-.txt-servicos{
-  font-size: 25px;
-  margin-left: -100px;
-  margin-right: -100px;
-}
-
-.txt-contato{
-  margin-left: -100px;
-  margin-right: -50px;
+.bg-sobre{
+padding: 60px 0; /* Espaçamento vertical */
 }
 
 .contato a {
-        font-size: 25px; /* Tamanho da fonte */
-    }
-
-    .pergunta{
-      font-size: 23px;
-    }
-
-    .faq{
-  margin-left: 30px;
-  margin-right: 0px;
-  font-size: 18px;
+font-size: 15px; /* Tamanho da fonte */
 }
 
-      .arrow {
-  opacity: 0.0;          /* Opcional: aparência de desabilitado */
+.footer {
+font-size: 0.9rem;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { /*Tablets*/
+body {
+margin: 0;
+padding: 0;
+}
+
+.flex{
+flex-direction: column;
+}
+
+.menu-desktop{
+display: none !important;
+}
+
+.menu-mobile {
+display: none; /* Só aparece quando ativado */
+}
+
+.menu-mobile.active {
+display: block !important; /* ou flex, dependendo do layout */
+}
+
+.menu-mobile ul li a {
+font-size: 21px;
+}
+
+/* Ícone do menu */
+.menu-icon {
+top: 18px;       /* Distância do topo */
+left: 20px;      /* Distância da esquerda */
+font-size: 45px;
+cursor: pointer;
+color: #8B3A3A;
+margin: 0;       /* Remove margens que empurram */
+}
+
+
+.interface {
+padding-left: 16px;  /* margem interna fixa */
+padding-right: 16px; /* idem */
+max-width: 500px; /* trava o conteúdo para sempre ter a mesma largura */
+margin: 0 auto;   /* centraliza */
+}
+
+header {
+top: -10px; /* Ajuste para não colidir com a logo */
+margin-bottom: 0;
+padding-bottom: 0;
+
+}
+
+.logo-img {
+margin-left: 260px; /* Espaço à direita */
+margin-top: 15px;
+width : 300px
+}
+
+#inicio .txt-inicio {
+order: 1;
+}
+
+#inicio .imagem-gabriel {
+order: 2;
+}
+
+.txt-infos{
+font-size: 60px;
+margin-top: 10px;
+display: flex;
+flex-direction: column; /* texto em cima, botão embaixo */
+align-items: center;    /* centraliza horizontalmente */
+text-align: center;     /* centraliza o texto também */
+}
+
+.txt-inicio{
+font-size: 25px;
+margin-top: 10px;
+margin-left: -50px;
+margin-right: -50px;
+text-align: justify;
+}
+
+.frase{
+margin-left: 0px;
+margin-right: 00px;
+}
+
+
+.imagem-gabriel img {
+height: 700px;
+width: 500px;
+display: block; 
+margin: 0 auto;
+}
+
+.txt-abordagem{
+font-size: 25px;
+margin-left: -100px;
+margin-right: -60px;
+text-align: justify;
+}
+
+.txt-paraquem{
+font-size: 25px;
+margin-left: -100px;
+margin-right: -50px;
+text-align: justify;
+}
+
+.tituloexp{
+margin-top: -40px;
+}
+
+#experiencia .esquerda,
+#experiencia .direita {
+margin-top: 0 !important; /* remove o espaço entre elas */
+}
+
+.frase2{
+font-size: 27px;
+margin-left: -50px;
+margin-right: -50px;  
+}
+
+.txt-servicos{
+font-size: 25px;
+margin-left: -100px;
+margin-right: -100px;
+}
+
+.txt-contato{
+margin-left: -100px;
+margin-right: -50px;
+}
+
+.contato a {
+font-size: 25px; /* Tamanho da fonte */
+}
+
+.pergunta{
+font-size: 23px;
+}
+
+.faq{
+margin-left: 30px;
+margin-right: 0px;
+font-size: 18px;
+}
+
+.arrow {
+opacity: 0.0;          /* Opcional: aparência de desabilitado */
 }
 
 .faq-box:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  }
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
 
-  .faq-box:hover .faq-resposta {
-    max-height: 500px;
-    opacity: 1;
-  }
+.faq-box:hover .faq-resposta {
+max-height: 500px;
+opacity: 1;
+}
 
-  .btn-contato-branco{
+.btn-contato-vinho{
+font-size: 20px;
+}
 
-        
-        font-size: 20px;
-  }
+a {
+text-decoration: none;
+}
 
-  .btn-contato-vinho{
-    font-size: 20px;
-    
-  }
-  
+.footer {
+font-size: 1.3rem;
+}
 
-    a {
-        text-decoration: none;
-    }
-    
-  }
+}
